@@ -8,16 +8,28 @@ import com.theta.graphic.ThetaGraphics;
 
 public class GUIVertex extends Vertex {
 
+  /** */
   private Ellipse2D.Double ellipse;
   
+  /** */
   private final int WIDTH = 20;
+  
+  /** */
   private final int HEIGHT = 20;
   
+  /** */
   private int x;
+  
+  /** */
   private int y;
   
+  /** */
   private boolean isSelected;
+  
+  /** */
   private boolean isStartVertex;
+  
+  /** */
   private boolean isEndVertex;
   
   public GUIVertex(int id, int x, int y) {
