@@ -1,8 +1,9 @@
 package com.joshuacrotts.dijkstra;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Stroke;
 import java.awt.geom.Ellipse2D;
-import java.awt.geom.Ellipse2D.Double;
 
 import com.theta.graphic.ThetaGraphics;
 
@@ -59,8 +60,11 @@ public class GUIVertex extends Vertex {
     
     // If we have the vertex selected, remove 
     if (this.isSelected) {
+      Stroke s = ThetaGraphics.GFXContext.getStroke();
+      ThetaGraphics.GFXContext.setStroke(new BasicStroke(3));
       ThetaGraphics.GFXContext.setColor(Color.blue);
       ThetaGraphics.GFXContext.draw(ellipse);
+      ThetaGraphics.GFXContext.setStroke(s);
     }
     
     // Draw the inner-label with the vertex identifier. 

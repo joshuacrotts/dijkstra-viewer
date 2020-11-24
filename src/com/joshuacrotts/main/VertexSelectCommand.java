@@ -19,7 +19,7 @@ public class VertexSelectCommand extends Command {
 
   public VertexSelectCommand(DijkstraRunner dijkstraRunner) {
     this.dijkstra = dijkstraRunner;
-    this.bind(dijkstra.getKeyboard(), KeyEvent.VK_M);
+    this.bind(dijkstra.getKeyboard(), KeyEvent.VK_E);
   }
 
   @Override
@@ -40,6 +40,7 @@ public class VertexSelectCommand extends Command {
           pointTwo = null;
         }
       }
+      
       // If pointOne is null and we just selected a vertex, then assign
       // the current vertex to pointOne. Once pointOne != null, pointTwo is
       // assigned.

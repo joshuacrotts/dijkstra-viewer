@@ -38,6 +38,9 @@ public class DijkstraRunner extends ThetaGraphicalApplication {
   /** */
   private final DijkstraSolverCommand DIJKSTRA_SOLVER_COMMAND;
   
+  /** */
+  private final GraphClearCommand GRAPH_CLEAR_COMMAND;
+  
   public DijkstraRunner() {
     super(WIDTH, HEIGHT, "Dijkstra Viewer");
     this.DIJKSTRA_GRAPH = new GUIDijkstra();
@@ -47,6 +50,7 @@ public class DijkstraRunner extends ThetaGraphicalApplication {
     this.EDGE_SELECT_COMMAND = new EdgeSelectCommand(this);
     this.VERTEX_MODIFIER = new VertexModifier(this);
     this.DIJKSTRA_SOLVER_COMMAND = new DijkstraSolverCommand(this);
+    this.GRAPH_CLEAR_COMMAND = new GraphClearCommand(this);
   }
 
   @Override

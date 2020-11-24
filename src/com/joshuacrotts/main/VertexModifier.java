@@ -58,7 +58,7 @@ public class VertexModifier {
     private boolean active = false;
     
     public VertexSetEndCommand(DijkstraRunner dijkstraRunner) {
-      this.bind(dijkstraRunner.getKeyboard(), KeyEvent.VK_E);
+      this.bind(dijkstraRunner.getKeyboard(), KeyEvent.VK_W);
     }
 
     @Override
